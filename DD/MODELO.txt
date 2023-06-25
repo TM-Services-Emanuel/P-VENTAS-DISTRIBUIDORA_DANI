@@ -1,0 +1,24 @@
+             FARMAMILI
+      de Alfonso Avalos Gimenez.
+  Jose M. A. Godoy c/Las Residentas
+  (0971)799004
+_______________________________________
+FECHA: 2021-04-15 17:28:41    CREDITO
+TICKET N: 151             CAJA N°:27 
+VENDEDOR: FANY BARRIOS
+CLIENTE: ROCIO ISABEL BARRIOS AGUILAR 
+RUC: 474482-9
+_______________________________________
+CANT  P.PUBL  %DESC  P.UNIT   TOTAL
+
+CARTUCHERA POLIESTER CHENSON DE COLOR
+ 1    0        0     18,500  18,500
+---------------------------------------
+TOTAL A PAGAR:                18,500  
+---------------------------------------
+EFECTIVO :                0
+VUELTO   :                0
+=======================================
+     !GRACIAS POR SU PREFERENCIA!
+           SISTEMA E-FARM
+=======================================

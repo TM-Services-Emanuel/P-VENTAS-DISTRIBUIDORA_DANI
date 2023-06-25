@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DetalleVentasSalon" pageWidth="623" pageHeight="907" whenNoDataType="AllSectionsNoDetail" columnWidth="603" leftMargin="10" rightMargin="10" topMargin="0" bottomMargin="0" uuid="e115bc59-fd0f-446b-a585-04725e27d7f0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DistribuidoraDani.xml"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#FFFFFF" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<parameter name="desde" class="java.sql.Date"/>
+	<parameter name="hasta" class="java.sql.Date"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM v_ventatotal_reporte
+WHERE v_ventatotal_reporte.fecha >= $P{desde} 
+AND v_ventatotal_reporte.fecha <= $P{hasta} 
+ORDER BY v_ventatotal_reporte.condicion ASC]]>
+	</queryString>
+	<field name="cod" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="cod"/>
+		<property name="com.jaspersoft.studio.field.label" value="cod"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="caj" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="caj"/>
+		<property name="com.jaspersoft.studio.field.label" value="caj"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codve" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="codve"/>
+		<property name="com.jaspersoft.studio.field.label" value="codve"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vend" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="vend"/>
+		<property name="com.jaspersoft.studio.field.label" value="vend"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codcli" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="codcli"/>
+		<property name="com.jaspersoft.studio.field.label" value="codcli"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ruc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ruc"/>
+		<property name="com.jaspersoft.studio.field.label" value="ruc"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="desccliente" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="desccliente"/>
+		<property name="com.jaspersoft.studio.field.label" value="desccliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fac" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fac"/>
+		<property name="com.jaspersoft.studio.field.label" value="fac"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="condicion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="condicion"/>
+		<property name="com.jaspersoft.studio.field.label" value="condicion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fecha" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="fecha"/>
+		<property name="com.jaspersoft.studio.field.label" value="fecha"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hora" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.name" value="hora"/>
+		<property name="com.jaspersoft.studio.field.label" value="hora"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fac_totalcosto" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="fac_totalcosto"/>
+		<property name="com.jaspersoft.studio.field.label" value="fac_totalcosto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fac_totalfinal" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="fac_totalfinal"/>
+		<property name="com.jaspersoft.studio.field.label" value="fac_totalfinal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_ventatotal_reporte"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="fac_totalcosto1" class="java.lang.Long" resetType="Group" resetGroup="Group1" calculation="Sum">
+		<variableExpression><![CDATA[$F{fac_totalcosto}]]></variableExpression>
+	</variable>
+	<variable name="fac_totalfinal1" class="java.lang.Long" resetType="Group" resetGroup="Group1" calculation="Sum">
+		<variableExpression><![CDATA[$F{fac_totalfinal}]]></variableExpression>
+	</variable>
+	<variable name="Ganancia" class="java.lang.Integer">
+		<variableExpression><![CDATA[$V{fac_totalfinal1}.intValue()-$V{fac_totalcosto1}.intValue()]]></variableExpression>
+	</variable>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{condicion}]]></groupExpression>
+	</group>
+	<title>
+		<band height="13">
+			<textField>
+				<reportElement style="Detail" x="6" y="1" width="548" height="10" uuid="fafe6999-4c2e-4164-9970-fc63770a876b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="58da26d2-7a2f-4078-b99f-2fa56bc3da94"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["SALÓN DE VENTA"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band height="38" splitType="Stretch">
+			<textField pattern="#,###.###;(-#,###.###)" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="201" y="24" width="352" height="12" forecolor="#0B109C" backcolor="#F0F0F0" uuid="6b87f7b1-f4f0-47e9-a6f2-d5b039c9ccc2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{Ganancia}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,###.###;(-#,###.###)" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="344" y="0" width="52" height="12" forecolor="#056318" backcolor="#F0F0F0" uuid="f653a7d8-d288-43f6-b51f-118ce7e62896"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{fac_totalfinal1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,###.###;(-#,###.###)" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="344" y="12" width="52" height="12" forecolor="#FF0905" backcolor="#F0F0F0" uuid="a9bb39af-11a4-4e47-bd70-3b6a0852bce4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{fac_totalcosto1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="90" y="0" width="86" height="12" forecolor="#050505" uuid="ced9fb7a-6d32-4ae7-b4a7-1550a913f152">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1f2e645f-6175-4e19-af82-79080ecc8610"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="7" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[RESUMEN DE TOTALES:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="90" y="12" width="86" height="12" forecolor="#050505" uuid="448bfde1-4e6c-44c5-b73a-d5c87b1da82b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1f2e645f-6175-4e19-af82-79080ecc8610"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="7" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[COSTO TOTAL:]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="90" y="24" width="111" height="12" backcolor="#F0F0F0" uuid="6af13026-3fb7-47ff-9e21-15a5efbbd491">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["GANANCIA O PERDIDA NETA: "]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

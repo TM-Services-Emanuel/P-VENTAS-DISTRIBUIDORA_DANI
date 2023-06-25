@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ventas_por_clientes_movil" pageWidth="623" pageHeight="907" whenNoDataType="AllSectionsNoDetail" columnWidth="603" leftMargin="10" rightMargin="10" topMargin="0" bottomMargin="0" uuid="a1f690a3-5977-4467-85f8-6b0bcd5b7210">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bd_distribuidoradani"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<parameter name="desde" class="java.sql.Date"/>
+	<parameter name="hasta" class="java.sql.Date"/>
+	<parameter name="codcli" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM v_venta_movil_informe
+WHERE v_venta_movil_informe.codcli = $P{codcli}
+AND v_venta_movil_informe.fecha >= $P{desde} 
+AND v_venta_movil_informe.fecha <= $P{hasta}]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idemision" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="idemision"/>
+		<property name="com.jaspersoft.studio.field.label" value="idemision"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estable" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estable"/>
+		<property name="com.jaspersoft.studio.field.label" value="estable"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pexp" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pexp"/>
+		<property name="com.jaspersoft.studio.field.label" value="pexp"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="factura" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="factura"/>
+		<property name="com.jaspersoft.studio.field.label" value="factura"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idtimbrado" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="idtimbrado"/>
+		<property name="com.jaspersoft.studio.field.label" value="idtimbrado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="timbra" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="timbra"/>
+		<property name="com.jaspersoft.studio.field.label" value="timbra"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="condicion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="condicion"/>
+		<property name="com.jaspersoft.studio.field.label" value="condicion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fecha" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="fecha"/>
+		<property name="com.jaspersoft.studio.field.label" value="fecha"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hora" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="hora"/>
+		<property name="com.jaspersoft.studio.field.label" value="hora"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codcli" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="codcli"/>
+		<property name="com.jaspersoft.studio.field.label" value="codcli"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="razon_social" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="razon_social"/>
+		<property name="com.jaspersoft.studio.field.label" value="razon_social"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ruc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ruc"/>
+		<property name="com.jaspersoft.studio.field.label" value="ruc"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="totalfinal" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="totalfinal"/>
+		<property name="com.jaspersoft.studio.field.label" value="totalfinal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="exenta" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="exenta"/>
+		<property name="com.jaspersoft.studio.field.label" value="exenta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="iva5" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="iva5"/>
+		<property name="com.jaspersoft.studio.field.label" value="iva5"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="iva10" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="iva10"/>
+		<property name="com.jaspersoft.studio.field.label" value="iva10"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="totalfinal1" class="java.lang.Integer" resetType="Group" resetGroup="Group1" calculation="Sum">
+		<variableExpression><![CDATA[$F{totalfinal}]]></variableExpression>
+	</variable>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{codcli}]]></groupExpression>
+		<groupFooter>
+			<band height="12">
+				<staticText>
+					<reportElement style="Column header" mode="Opaque" x="439" y="0" width="52" height="12" forecolor="#050505" backcolor="#F0F0F0" uuid="8f459c06-3f71-4100-8228-f3fd0bccbe7f">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9b861689-5c1e-45c2-9f8c-71385471e4a5"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="2.0" lineStyle="Double" lineColor="#000000"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[VENDIDOS]]></text>
+				</staticText>
+				<textField pattern="#,###.###;(-#,###.###)" isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="491" y="0" width="63" height="12" backcolor="#F0F0F0" uuid="5285368e-97a4-4031-ae91-f845fc14ecdd"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="7" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{totalfinal1}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement style="Detail" x="7" y="27" width="547" height="10" uuid="83ed8a8e-c3d9-4d2c-815c-8f7bba316024">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="58da26d2-7a2f-4078-b99f-2fa56bc3da94"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["VENTA MÓVIL EN REPARTO"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="7" y="2" width="72" height="12" forecolor="#050505" uuid="8bf57778-ab68-420a-aada-967f6329b56a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="45606114-7c66-4e2f-8e21-3c6f4bf2283f"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[RUC:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="7" y="14" width="72" height="12" forecolor="#050505" uuid="365c8d51-ba5a-438e-9e08-ad7eb5b865c1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="45606114-7c66-4e2f-8e21-3c6f4bf2283f"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[RAZÓN SOCIAL:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="79" y="2" width="148" height="12" uuid="c4183773-4e57-466e-bf39-2e64c7518a90"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ruc}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="79" y="14" width="150" height="12" uuid="114948fe-03df-4ed7-9bc2-f4f8dba2da9b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{razon_social}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

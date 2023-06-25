@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ResumenCaja" pageWidth="623" pageHeight="907" whenNoDataType="AllSectionsNoDetail" columnWidth="603" leftMargin="10" rightMargin="10" topMargin="5" bottomMargin="5" uuid="e9bb1a27-f975-4aa4-98f9-75524c5daafa">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DistribuidoraDani.xml"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#FFFFFF" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<parameter name="caja" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM caja WHERE ca_id= $P{caja}]]>
+	</queryString>
+	<field name="ca_id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="ca_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_fechainicio" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="ca_fechainicio"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_fechainicio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_horainicio" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.name" value="ca_horainicio"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_horainicio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_fechafin" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="ca_fechafin"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_fechafin"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_horafin" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.name" value="ca_horafin"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_horafin"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_inicial" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="ca_inicial"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_inicial"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_final" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="ca_final"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_final"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_entregado" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="ca_entregado"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_entregado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_diferencia" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="ca_diferencia"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_diferencia"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_usuarioinicio" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ca_usuarioinicio"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_usuarioinicio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_usuariocierre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ca_usuariocierre"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_usuariocierre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ca_indicador" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ca_indicador"/>
+		<property name="com.jaspersoft.studio.field.label" value="ca_indicador"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="caja"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{ca_id}]]></groupExpression>
+		<groupHeader>
+			<band height="110">
+				<textField isBlankWhenNull="true">
+					<reportElement style="SubTitle" x="36" y="3" width="174" height="15" forecolor="#000000" uuid="91d5865d-2791-4d53-8ab5-f5bedeea756b">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" PERTENECIENTE A LA CAJA N° "]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement mode="Opaque" x="10" y="3" width="22" height="15" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="a60f080a-41ef-421c-93cf-34257c2e2b0a">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+				</rectangle>
+				<textField pattern="dd-MM-yyyy" isBlankWhenNull="true">
+					<reportElement x="100" y="36" width="120" height="11" uuid="6c9d1817-d4cf-451e-b054-05b45e4d402f"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_fechainicio}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="19" width="280" height="15" uuid="e54d1ebb-ff12-4a21-b76d-30e83810e30a">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.25" lineStyle="Solid"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DATOS DE APERTURA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="36" width="80" height="11" uuid="bde27c10-573e-4698-b21a-10db1e67926a">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[FECHA:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="47" width="80" height="11" uuid="aa799a1b-48d5-44b8-a9c6-22ec638847c1">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[HORA:]]></text>
+				</staticText>
+				<textField pattern="HH:mm" isBlankWhenNull="true">
+					<reportElement x="100" y="47" width="120" height="11" uuid="d5dffc3b-d5cb-44f7-874d-74597a697fc8">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_horainicio}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="290" y="19" width="275" height="15" uuid="29dfdd2e-b572-4fcb-bdab-e5fedfcae559">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.25" lineStyle="Solid"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DATOS DE CIERRE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="58" width="80" height="11" uuid="01912ddc-c617-4294-aa59-d0ebb64255ce">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[USUARIO:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="100" y="58" width="120" height="11" uuid="f88acc36-044d-4569-99dc-c745b181a449">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_usuarioinicio}]]></textFieldExpression>
+				</textField>
+				<textField pattern="&apos;Gs&apos; #,##0.###;#,##0.###-" isBlankWhenNull="true">
+					<reportElement x="100" y="69" width="120" height="11" uuid="5a2af619-de82-401c-9a62-9059dd67077c"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_inicial}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="20" y="69" width="80" height="11" uuid="9970032c-4ef0-429e-bddf-6d0951bfa2ab">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[EFECTIVO BASE:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="37" width="88" height="11" uuid="8d177dad-ed43-4663-8fcb-c74e46fa3d8e">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[FECHA:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="48" width="88" height="11" uuid="2860b09b-8157-4d37-a72c-8bfa730353a3">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[HORA:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="59" width="88" height="11" uuid="7e5f313b-6d5f-4376-ac15-ab964db4a88c">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[USUARIO:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="70" width="88" height="11" uuid="46e92e25-dba9-4477-8d03-5eb3dd82296f">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[VENDIDO:]]></text>
+				</staticText>
+				<textField pattern="dd-MM-yyyy" isBlankWhenNull="true">
+					<reportElement x="388" y="37" width="120" height="11" uuid="23b5ae03-0a17-48bf-9b06-0cd742ae70b3">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_fechafin}]]></textFieldExpression>
+				</textField>
+				<textField pattern="HH:mm" isBlankWhenNull="true">
+					<reportElement x="388" y="48" width="120" height="11" uuid="ebb66ba6-ab81-4919-a883-545c4406e290">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_horafin}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="388" y="59" width="120" height="11" uuid="7f07e6e1-6c40-421a-84e4-b57f0ffcf1f7">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_usuariocierre}]]></textFieldExpression>
+				</textField>
+				<textField pattern="&apos;Gs&apos; #,##0.###;#,##0.###-" isBlankWhenNull="true">
+					<reportElement x="388" y="70" width="120" height="11" uuid="678c6a75-f3f7-487f-97a4-74e52831d856"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_final}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="103" width="555" height="6" uuid="e45be0b8-c105-4833-87db-cc123f64d29a"/>
+					<box>
+						<bottomPen lineWidth="0.25" lineStyle="Solid"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="81" width="88" height="11" uuid="5adf73a2-ab57-4c3b-a8f6-3721170f3ee7">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ENREGADO:]]></text>
+				</staticText>
+				<textField pattern="&apos;Gs&apos; #,##0.###;#,##0.###-" isBlankWhenNull="true">
+					<reportElement x="388" y="81" width="120" height="11" uuid="457aa6d4-63e3-442c-9b99-97f4d76b0d44"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_entregado}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="300" y="92" width="88" height="11" uuid="0597bf08-f589-4e8a-9925-65fdfb4b99ad">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DIF.:]]></text>
+				</staticText>
+				<textField pattern="&apos;Gs&apos; #,##0.###;#,##0.###-" isBlankWhenNull="true">
+					<reportElement x="388" y="92" width="120" height="11" uuid="fc032abb-069c-46db-8ab3-7686b3a30940"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_diferencia}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="SubTitle" x="210" y="3" width="180" height="15" forecolor="#000000" uuid="f81c249f-6dc6-420b-a62c-d422be2351a6">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ca_id}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<title>
+		<band height="17" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="10" y="0" width="555" height="17" uuid="524767a9-e7e5-4041-9b08-5a7210b38e22">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE MOVIMIENTO DE CAJA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="6" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="10" y="4" width="555" height="2" backcolor="#666666" uuid="eb0fefed-b830-492b-a0c9-ec23411537a7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="228" splitType="Stretch">
+			<subreport>
+				<reportElement x="-9" y="10" width="575" height="23" uuid="c10ffdac-5129-467b-a424-83f6ff517250">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<subreportParameter name="caja">
+					<subreportParameterExpression><![CDATA[$P{caja}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["C:/P-VENTAS/Reports/caja/TotalVContadoF.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="-9" y="33" width="575" height="23" uuid="068da335-9e19-47e9-a373-1392f6944794">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<subreportParameter name="caja">
+					<subreportParameterExpression><![CDATA[$P{caja}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["C:/P-VENTAS/Reports/caja/TotalIngresoF.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="-9" y="70" width="575" height="23" uuid="c57200e9-b032-446b-80fd-61ca5c02c57e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<subreportParameter name="caja">
+					<subreportParameterExpression><![CDATA[$P{caja}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["C:/P-VENTAS/Reports/caja/TotalCContadoF.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="-9" y="93" width="575" height="23" uuid="cdd2610d-8125-410f-8ca3-d9ea46797102">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<subreportParameter name="caja">
+					<subreportParameterExpression><![CDATA[$P{caja}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["C:/P-VENTAS/Reports/caja/TotalGastosF.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="-9" y="182" width="575" height="23" uuid="311aa4aa-cac4-4453-b987-7eb402732809">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<subreportParameter name="caja">
+					<subreportParameterExpression><![CDATA[$P{caja}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["C:/P-VENTAS/Reports/caja/TotalVCreditoF.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="-9" y="205" width="575" height="23" uuid="9672a7b3-295e-4c2a-be11-ce6cc712bde9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<subreportParameter name="caja">
+					<subreportParameterExpression><![CDATA[$P{caja}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["C:/P-VENTAS/Reports/caja/TotalCCreditoF.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField pattern="EEEEE&apos;,&apos; dd-MM-yyyy">
+				<reportElement style="Column header" x="0" y="0" width="131" height="20" forecolor="#000000" uuid="f8570c2f-4404-4725-885a-4eb3c26abb4a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Consolas" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

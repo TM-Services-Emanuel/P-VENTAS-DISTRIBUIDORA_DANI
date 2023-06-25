@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>MyReports</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>net.sf.jasperreports.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>net.sf.jasperreports.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>ControlST_CP.jasper</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/repartos/ControlST_CP.jasper</location>
+		</link>
+		<link>
+			<name>ControlST_CP.jrxml</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/repartos/ControlST_CP.jrxml</location>
+		</link>
+		<link>
+			<name>Hoja_reparto.jasper</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/repartos/Hoja_reparto.jasper</location>
+		</link>
+		<link>
+			<name>Hoja_reparto.jrxml</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/repartos/Hoja_reparto.jrxml</location>
+		</link>
+		<link>
+			<name>Inventario_Productos.jasper</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/articulos/Inventario_Productos.jasper</location>
+		</link>
+		<link>
+			<name>Inventario_Productos.jrxml</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/articulos/Inventario_Productos.jrxml</location>
+		</link>
+		<link>
+			<name>ListaProductos.jasper</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/articulos/ListaProductos.jasper</location>
+		</link>
+		<link>
+			<name>ListaProductos.jrxml</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/articulos/ListaProductos.jrxml</location>
+		</link>
+		<link>
+			<name>movimiento_reparto.jasper</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/repartos/movimiento_reparto.jasper</location>
+		</link>
+		<link>
+			<name>movimiento_reparto.jrxml</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/repartos/movimiento_reparto.jrxml</location>
+		</link>
+		<link>
+			<name>movimiento_reparto_E.jasper</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/repartos/movimiento_reparto_E.jasper</location>
+		</link>
+		<link>
+			<name>movimiento_reparto_E.jrxml</name>
+			<type>1</type>
+			<location>D:/PROYECTOS/PUNTO DE VENTA/SOFTWARE PUNTO DE VENTA/DISTRIBUIDORA DANI PROJECT/DD/Reports/repartos/movimiento_reparto_E.jrxml</location>
+		</link>
+	</linkedResources>
+</projectDescription>
